@@ -35,3 +35,13 @@ print(charakter_name + str(level))
 print("Charakter: " + charakter_name)
 print("Level: " + str(level))
 print("Gold: " + str(gold))
+
+# Alte Methode (umständlich)
+print("Charakter: " + charakter_name + " Level: " + str(level))
+# f-String (modern, viel lesbarer)
+print(f"Charakter: {charakter_name} Level: {level}")
+
+print(f"Charakter: {charakter_name}")
+print(f"Level: {level}")
+print(f"Gold: {gold}")
+
