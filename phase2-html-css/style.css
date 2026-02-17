@@ -39,3 +39,16 @@ button {
     border-radius: 8px;
     width: 200px;
 }
+
+.charakter-karte:hover {
+    border-color: #c8a96e;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c8a96e;
+    color: #0d0d1a;
+    transition: all 0.3s ease;
+}
