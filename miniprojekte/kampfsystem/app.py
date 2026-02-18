@@ -35,5 +35,12 @@ def erstellen():
         return redirect("/")
     return render_template("erstellen.html")
 
+@app.route("/charakter/<int:id>")
+def charakter_detail(id):
+    # Holde den Charakter mit dieser ID aus der Datenbank
+    char = Charakter.query.get(id)
+    # Zeige das Template
+    return render_template("charakter_detail.html", char=char)
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -10,11 +10,13 @@
     <h1>Deine Charaktere</h1>
 
     {% for char in charaktere %}
+    <a href="/charakter/{{ char.id }}">
     <div class="charakter-karte">
         <h3>{{ char.name }}</h3>
         <p>{{ char.klasse }} | Level {{ char.level }}</p>
         <p>HP: {{ char.hp }} | Gold: {{ char.gold }}</p>
     </div>
+    </a>
     {% endfor %}
 
     <a href="/erstellen">Neuen Charakter erstellen</a>
