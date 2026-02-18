@@ -1,0 +1,99 @@
+body {
+    background-color: #0d0d1a;
+    color: #c8a96e;
+    font-family: Georgia, serif;
+    padding: 40px;
+}
+
+h1 {
+    color: #e94560;
+    font-size: 42px;
+}
+
+h2 {
+    color: #c8a96e;
+    border-bottom: 1px solid #e94560;
+    padding-bottom: 10px;
+}
+
+button {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.charakter-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.charakter-karte {
+    background-color: #1a1a2e;
+    border: 1px solid #e94560;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.charakter-karte:hover {
+    border-color: #c8a96e;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c8a96e;
+    color: #0d0d1a;
+    transition: all 0.3s ease;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #e94560;
+    text-decoration: none;
+}
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    background-color: #1a1a2e;
+    border: 1px solid #e94560;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-box p:first-child {
+    color: #e94560;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* HP Balken */
+.hp-balken-container {
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    width: 300px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.hp-balken {
+    background-color: #00cc44;
+    height: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
