@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charaktere</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Deine Charaktere</h1>
+
+    {% for char in charaktere %}
+    <div class="charakter-karte">
+        <h3>{{ char.name }}</h3>
+        <p>{{ char.klasse }} | Level {{ char.level }}</p>
+        <p>HP: {{ char.hp }} | Gold: {{ char.gold }}</p>
+    </div>
+    {% endfor %}
+
+    <a href="/erstellen">Neuen Charakter erstellen</a>
+</body>
+</html>
